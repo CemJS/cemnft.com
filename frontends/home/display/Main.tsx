@@ -1,10 +1,12 @@
 import { Cemjsx, Static } from "cemjs-all"
-import CemSwap from '@images/home/background.jpg';
+import lines from "@images/home/lines.svg";
+import nft from "@images/home/nft.jpg";
 
 export default function () {
   return (
-    <div class="container mx-auto flex items-center h-screen">
-      <img src={ CemSwap } alt="cem swap logo" />
-    </div>
+    <section class="home container h-screen mx-auto flex items-center relative overflow-hidden">
+      <img src={ lines } alt="background element" class="absolute w-3/12"/>
+      <img src={ nft } alt="crypto emergency, nft" class="object-contain" />
+    </section>
   )
 }
