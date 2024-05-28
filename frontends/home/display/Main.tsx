@@ -1,12 +1,10 @@
 import { Cemjsx, Static } from "cemjs-all"
-import space from '@svg/space.svg'
-
+import CemSwap from '@images/home/background.jpg';
 
 export default function () {
   return (
-    <div class="home home_container">
-      <h2 class="home_title">{Static.text}</h2>
-      <img class="home_logoCem" src={space}></img>
+    <div class="container mx-auto flex items-center h-screen">
+      <img src={ CemSwap } alt="cem swap logo" />
     </div>
   )
 }
